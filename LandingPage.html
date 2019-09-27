@@ -19,15 +19,17 @@
     }
 
     #nav-bar {
-        display: flex;
-        flex-direction: flex-end;
         justify-content: space-around;
-        margin-left: 50px;
+        margin-left: 30em;
     }
 
     .nav-link {
+        justify-content: space-between;
+        width: 400px;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 60px;
+        margin-top: 0px;
+        text-decoration: none;
     }
 
     #main-container {
@@ -37,9 +39,30 @@
     }
 
     #video {
-        margin-left: 37%;
-        margin-right: 50%;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        margin: auto;
     }
+
+    #section-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* #sizes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #pricing {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    } */
 
 </style>
 
@@ -57,13 +80,14 @@
             <br>
             <main>
                 <div id="main-container">
-                    <iframe id="video" src="https://youtu.be/n6AcC5dGJgk" width=400 height=200 ></iframe>
+                    <iframe id="video" src="https://youtu.be/n6AcC5dGJgk" width=400 height=200 align="center">How to Care for Your Records:</iframe>
                     <br>
-                    <section id="sizes">Sizes</section>
                     <br>
-                    <section id="pricing">Pricing</section>
-                    <br>
-                    <section id="order">Order</section>
+                    <div id="section-container">
+                        <section id="sizes">Sizes</section>
+                        <section id="pricing">Pricing</section>
+                        <section id="order">Order</section>
+                    </div>
                     <br>
                     <div>Stay up-to-date by signing up for our newsletter below!</div>
                     <form id="form" action="https://www.freecodecamp.com/email-submit">
